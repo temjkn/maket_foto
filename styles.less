@@ -1,0 +1,350 @@
+@color_header: #265c99;
+@border:lighten(@color_header,50%);
+
+body,
+li,
+ul{
+    margin: 0;
+    padding: 0;
+    color: #676767;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none; 
+    color: black;
+   }
+
+nav a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+.header {
+    position: relative;
+    background-color:@color_header;
+    height: 70px;
+    width: 100%;
+    color:white;
+    li{
+        display: inline-block;
+    }  
+}
+
+.logo {
+    line-height: 70px;
+    font-size: 20px;
+    margin-left: 6%;
+}
+
+.phone {
+    margin-left:7%;
+}
+
+.search_hidden label{
+    display: none;
+}
+
+.search256 {
+    margin-left:15%;
+    position: relative;
+    input[type="search"]{
+        outline: none;
+        -webkit-appearance: none;
+        width: 265px;
+        border: 0;
+        border-bottom: 1px solid @border;
+        background-color:@color_header;
+        color:white;
+        padding-left: 20px;            
+    }
+    .checkbox_search256{
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      color: white;
+    }
+}
+::-webkit-input-placeholder {color:white;}
+::-moz-placeholder          {color:white;}/* Firefox 19+ */
+:-moz-placeholder           {color:white;}/* Firefox 18- */
+:-ms-input-placeholder      {color:white;}
+
+.delivery {
+    margin-left: 23.5%;
+    text-decoration: underline;
+}
+
+.bar label,
+input[type="checkbox"]{
+    display: none;
+}
+
+.slider input[type="checkbox"]:nth-child(1){
+    display: none;
+}
+
+.checkbox_slider{
+    cursor: pointer;
+      position: relative;
+      display: none;
+      width: 100%;
+      margin: 0;
+      color: #828282;     
+    i{
+        position: absolute;
+        right: 25px;
+        top: -25px;
+    }
+}
+
+#slider:checked~.accordion{
+    display: block;
+}
+
+#goods:checked~.bar_goods{
+    display: block;
+}
+
+.bar_goods{
+    position: absolute;
+    top: 70px;
+    opacity: 1;
+    display: block;
+    line-height: 50px;
+    //height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #1f497b;
+    li:nth-child(1){
+        margin-left: 6%;
+    }
+    li{
+        display: inline-block;
+        height: 100%;
+        margin-right: 4%;
+        padding: 0 5px;
+    }
+    li:hover{
+        background-color:lighten(#1f497b,12.5%);
+    }
+}
+
+.checkbox_bar{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    color:white;
+    left: 20px;
+    cursor: pointer;
+}
+
+.basket {
+    position: absolute;
+    right: 85px;
+    top: 70px;
+    height: 50px;
+    line-height: 42px;
+    .bask{
+        width: 90px;
+        padding-left: 50px;
+        height: 100%;
+        padding: 0 5px;
+    }
+    
+}
+
+.basket:hover{
+        background-color:lighten(#1f497b,12.5%);
+    }
+
+.content {
+    margin-left: 6%;
+    color: black;
+}
+
+.accordion {
+    position: absolute;
+    top: 145px;
+    margin-left: 6%;
+    display: block;
+    line-height: 50px;
+    width: 90%;
+    background-color: white;
+    li{
+        display: inline-block;
+        border: 0;
+    }
+}
+
+.accordion .trigger #checkbox-1,
+.accordion .trigger #checkbox-2{
+  display: none;
+}
+
+.accordion .trigger{
+    display: inline-block;
+    width: 265px;
+    height: 45px;
+    margin-right: 15px;
+    padding-left: 15px;
+    line-height: 45px;
+    border: 1px solid #e8e8e8;
+        
+}
+.checkbox {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0;
+      color:#676767;
+      cursor: pointer;
+    }
+
+.checkbox i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.accordion .trigger .content {
+    position: absolute;
+    display: block;
+    width: 280px;
+    margin-left: -15px;
+    padding-left: 15px;
+    max-height: 1px;
+    padding: 0;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    transition: max-height 500ms ease-in-out;
+    a{
+        color:#676767;
+        display: block;
+        width: 245px;
+        padding-left: 15px;
+    }
+}
+
+#checkbox-1:checked ~ .content,
+#checkbox-2:checked ~ .content {
+  max-height: 350px;
+  transition: max-height 500ms ease-in-out;
+}
+
+.price{
+    display: inline-block;
+    margin-left: 5px;
+    padding-left: 15px;
+    color:#676767;
+    input[type="text"]{
+        width: 123px;
+        text-align: right;
+        border: 0;
+        height: 35px;
+    }
+        label{
+            display: inline-block;
+            border: 1px solid #e8e8e8;
+            height: 45px;
+            padding: 0 10px;
+            margin-left: 10px;
+        }
+    label:nth-child(2){
+        margin-left: 0;
+        margin-right: 10px;
+        border-left: 0;
+    }
+}
+
+.card{     
+    width: 265px;
+    height: 365px;
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+    margin: 0;
+    a{
+        color:#676767;
+    }
+    img{
+        display: block;
+        height: 165px;
+        margin: auto;
+    }
+    h2{
+        color: black;
+    }
+    h3{
+        color:#2d6198;
+    }
+}
+
+.card:hover{    
+    border: 1px solid #2d6198;
+    background-color: #fbfbfb;
+}
+.value {
+    position: relative;
+    color:#2d6198;
+    border-top: 1px solid #2d6198;
+    i{
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+}
+
+.products {
+    margin: 0 6%;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spec {
+    width: 560px;
+    .foto_spec{
+        width: 50%;
+        height: 365px;
+        float: left;
+        padding: 0px;
+        text-align:center;
+        img{
+            height: 80%;
+        }        
+    }
+    .value_spec{
+            border-top: 1px solid #f7a7a7;
+            width: 50%;
+            position: relative;
+            float: right;
+            color:#f7a7a7;
+            h3{
+            color:#f7a7a7;
+            }
+            i{
+                position: absolute;
+                right: 0;
+                top: 15px;
+            }
+        }
+}
+    
+.spec:hover{    
+    background-color: #fdf8f3;
+    border: 1px solid #f7a7a7;
+}
+
+.old_price {
+    text-decoration: line-through;
+    padding-bottom: 5px;
+}
+
