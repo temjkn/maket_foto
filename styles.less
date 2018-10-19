@@ -34,18 +34,20 @@ a{
     width: 100%;
     color:white;
     li{
+        padding-top:5px; 
         display: inline-block;
     }  
 }
 
 .logo {
-    line-height: 70px;
-    font-size: 20px;
+    line-height: 69px;
+    font-size: 1.6em;
     margin-left: 6%;
 }
 
 .phone {
-    margin-left:7%;
+    margin-left:5%;
+    font-size: 1.3em;
 }
 
 .search_hidden label{
@@ -53,8 +55,9 @@ a{
 }
 
 .search256 {
-    margin-left:15%;
+    margin-left:10.7%;
     position: relative;
+    padding-top:0;
     input[type="search"]{
         outline: none;
         -webkit-appearance: none;
@@ -67,7 +70,7 @@ a{
     }
     .checkbox_search256{
       position: absolute;
-      top: 0;
+      top: 5px;
       z-index: 1;
       color: white;
     }
@@ -78,8 +81,9 @@ a{
 :-ms-input-placeholder      {color:white;}
 
 .delivery {
-    margin-left: 23.5%;
+    margin-left: 18.9%;
     text-decoration: underline;
+    color:white;
 }
 
 .bar label,
@@ -101,7 +105,7 @@ input[type="checkbox"]{
     i{
         position: absolute;
         right: 25px;
-        top: -25px;
+        top: -11px;
     }
 }
 
@@ -119,19 +123,31 @@ input[type="checkbox"]{
     opacity: 1;
     display: block;
     line-height: 50px;
-    //height: 50px;
+    font-size:.9em;
     width: 100%;
-    color: white;
     background-color: #1f497b;
-    li:nth-child(1){
-        margin-left: 6%;
-    }
     li{
         display: inline-block;
         height: 100%;
-        margin-right: 4%;
-        padding: 0 5px;
+        //margin-left: 1.2%;
+        padding: 0 25px;
     }
+    li:nth-child(1){
+        margin-left: 4.5%;
+    }
+    li:nth-child(2){
+        margin-left: 2.1%;
+    }
+    li:nth-child(3){
+        //margin-left: 2.1%;
+    }
+    li:nth-child(4){
+        margin-left: .4%;
+    }
+    li:nth-child(5){
+        margin-left: -.4%;
+    }
+    
     li:hover{
         background-color:lighten(#1f497b,12.5%);
     }
@@ -149,15 +165,14 @@ input[type="checkbox"]{
 
 .basket {
     position: absolute;
-    right: 85px;
+    right: 130px;
     top: 70px;
     height: 50px;
     line-height: 42px;
     .bask{
         width: 90px;
-        padding-left: 50px;
+        padding-left: 11px;
         height: 100%;
-        padding: 0 5px;
     }
     
 }
@@ -173,8 +188,8 @@ input[type="checkbox"]{
 
 .accordion {
     position: absolute;
-    top: 145px;
-    margin-left: 6%;
+    top: 141px;
+    margin-left: 6.3%;
     display: block;
     line-height: 50px;
     width: 90%;
@@ -192,10 +207,10 @@ input[type="checkbox"]{
 
 .accordion .trigger{
     display: inline-block;
-    width: 265px;
+    width: 254px;
     height: 45px;
-    margin-right: 15px;
-    padding-left: 15px;
+    margin-right: 8px;
+    padding-left: 0.7%;
     line-height: 45px;
     border: 1px solid #e8e8e8;
         
@@ -211,7 +226,7 @@ input[type="checkbox"]{
 
 .checkbox i {
   position: absolute;
-  right: 15px;
+  right: 13px;
   top: 15px;
 }
 
@@ -243,10 +258,9 @@ input[type="checkbox"]{
 .price{
     display: inline-block;
     margin-left: 5px;
-    padding-left: 15px;
     color:#676767;
     input[type="text"]{
-        width: 123px;
+        width: 89px;
         text-align: right;
         border: 0;
         height: 35px;
@@ -254,21 +268,24 @@ input[type="checkbox"]{
         label{
             display: inline-block;
             border: 1px solid #e8e8e8;
-            height: 45px;
-            padding: 0 10px;
-            margin-left: 10px;
+            padding: 0 5px;
         }
     label:nth-child(2){
         margin-left: 0;
-        margin-right: 10px;
+        margin-right: 2px;
+        padding-left: 7px;
         border-left: 0;
+        width: 130px;
     }
 }
 
-.card{     
-    width: 265px;
-    height: 365px;
+.card{  
+    /*-webkit-flex-basis: 22.17%; 
+    flex-basis: 22.17%;*/
+    width: 22.11%;
+    height: 333px;
     padding: 15px;
+    padding-top: 10px;
     border: 1px solid #e8e8e8;
     margin: 0;
     a{
@@ -276,14 +293,18 @@ input[type="checkbox"]{
     }
     img{
         display: block;
-        height: 165px;
-        margin: auto;
+        height: 167px;
+        margin-left: 43px;
     }
-    h2{
+    
+    .headline {
         color: black;
+        font-size: 1.21em;
+        margin-top: 10px
     }
-    h3{
-        color:#2d6198;
+        p{
+        margin: 3px 0;
+        font-size: 1.1em;
     }
 }
 
@@ -295,45 +316,62 @@ input[type="checkbox"]{
     position: relative;
     color:#2d6198;
     border-top: 1px solid #2d6198;
+    font-size: 1.3em;
+    margin-top: 15px;
+    padding-top: 4px;
     i{
         position: absolute;
-        right: 0;
-        top: 15px;
+        right: 5px;
+        top: 5px;
+        font-size: 1.2em;
     }
 }
 
 .products {
-    margin: 0 6%;
-    margin-top: 150px;
+    margin-left: 6.3%;
+    margin-top: 146px;
+    width: 84%;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
 }
 
 .spec {
-    width: 560px;
+    /*-webkit-flex: 2 0 22.17%; 
+    -ms-flex:  2 0 22.17%; 
+    flex:  2 0 22.17%;*/
+    width: 47%;
     .foto_spec{
-        width: 50%;
-        height: 365px;
+        width: 50.8%;
+        height: 368px;
         float: left;
         padding: 0px;
         text-align:center;
         img{
-            height: 80%;
+            height: 72.1%;
+            margin-top: 16px;
+            margin-left: 14px;
         }        
+    }
+    .headline_spec{
+        margin-top: 17px;
+        font-size: 1.3em;
+    }
+    .text{
+        font-size: 1.08em;
     }
     .value_spec{
             border-top: 1px solid #f7a7a7;
-            width: 50%;
+            width: 49%;
             position: relative;
             float: right;
             color:#f7a7a7;
-            h3{
-            color:#f7a7a7;
-            }
+            font-size: 1.3em;
+            padding-top: 3px;
             i{
                 position: absolute;
-                right: 0;
-                top: 15px;
+                right: 20px;
+                top: 9px;
             }
         }
 }
@@ -345,6 +383,9 @@ input[type="checkbox"]{
 
 .old_price {
     text-decoration: line-through;
+    padding-top: 25px;
     padding-bottom: 5px;
+    font-size: 1.3em;
 }
+
 

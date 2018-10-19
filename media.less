@@ -9,15 +9,58 @@
 
 @media screen and (max-width: 1024px) {
     .products{
-        margin: 0 1.5%;
-        margin-top: 30px;
+        margin: 0;
+        margin-left: 1.9%;
+        margin-right: 1.9%;
+        width: 96.8%;
     }
     .card{
-        width: 299px;
-        height: 360px;
+        width: 29.9%;
+        flex: none;
+        height: 331px;
+        .value{
+            margin-left: -6px;
+            i{
+                right: -3px;
+                top:6px;
+            }
+        }
+        p{
+            margin-left: -6px;
+        }
+        img{
+            margin-left: 66px;
+        }
+        .foto{
+            margin-top: 16px;
+        }
+        .headline{
+            margin-top: 12px;
+            font-size: 1.28em;
+        }
     }
     .spec {
-        width: 630px;
+        padding-right: 5px;
+        width: 64.05%;
+        flex: none;
+        .foto_spec{
+            width:43%;
+        }
+        .headline_spec{
+            font-size: 1.2em;
+        }
+        .text{
+           padding-right: 89px; 
+        }
+        .value_spec{
+            width: 57%;
+            i{
+                right: 4px;
+            }
+        }
+    }
+    .old_price{
+        padding-top: 45px;
     }
     .navigate{
         display: inline-block;
@@ -26,7 +69,7 @@
         margin-left: 20px;
     }
     .logo{
-        margin-left: 45px;
+        margin-left: 55px;
     }
     .phone {
         margin: 0;
@@ -37,10 +80,12 @@
     .delivery a{
         display: none;
     }
-    
+    .checkbox_bar{
+        font-size: 1.5em;
+    }
     .basket{
-        top:15px;
-        right: 25px;
+        top:12px;
+        right: 22px;
     }
     
     .bar_goods{
@@ -65,77 +110,85 @@
        margin-left: 0;
         margin-top: 30px;
        border-bottom: 1px solid #e8e8e8; 
+        height: 20px;
     }
     .checkbox_slider{
         display: block;
     }
     .search256 {
-    margin-left:2%;
-    width: 72%;
+    margin-left:1.5%;
+    width: 68.4%;
     input[type="search"]{
         width: 100%;;            
     }
     }
 }
-
-@media screen and (max-width: 1000px) {
-    .bar_goods li:nth-child(1){
-        margin-left: 0;
-    }
-    .accordion{
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 820px) {
-    .search256 {
-    margin-left:2%;
-    width: 65%;
-    }
-}
-
-@media screen and (max-width: 768px){ 
+@media screen and (max-width: 768px){
     .products{
-        margin: 0 2%;
-        margin-top: 30px;
+        width: 100%;
+        margin: 0;
+    } 
+    .card:nth-child(n+2):nth-child(even){
+       margin-left: 1.9%; 
     }
     .card{
-        width: 45%;
-        height: 360px;
-    }
-    .spec {
-        width: 94.5%;
-    }    
-}
-
-@media screen and (max-width: 760px){
-     .search_hid {
-        display: none;
-    }
-        .search_hidden {
-            position: absolute;
-            top: 27px;
-            right: 65px;
-        label{
-            display: block;
-            color: white;
-            cursor: pointer;
-            }
-    }
-    .search_hidden{
-        
-    }
-    .search256 {
-        position: absolute;
-        top: 25px;
-        left: 5px;        
-        .checkbox_search256{
-            display: none;
+        width: 44.67%;
+        height: 310px;
+        .foto{
+            margin-top: 19px;
+            img{
+            margin-left: 71px;
         }
-    }   
+        }
+        p{
+            margin-left: -4px;
+        }
+        .value{
+            margin-left: -3px;
+            margin-top:12px;
+            i{
+                right: 3px;
+                top:6px;
+            }
+        }
+    }
+    .spec{
+        width: 97.1%;
+        height: 331px;
+        .foto_spec {
+            width: 50.4%;
+            img{
+            margin-top: 16px;
+            margin-left: 33px;
+            }
+        }
+        .value_spec{
+            width: 49.6%;
+            i{
+                right: 15px;
+            }
+        }
+    }
+    .basket{
+        right:21px;
+    }
+    .checkbox_bar{
+        font-size: 1.5em;
+    }
+    .checkbox_slider{
+        font-size: 1.5em;
+        i{
+            right: 20px;
+            top: -18px;
+        }
+    }
+    
     .checkbox_hidden{
             display: none;
         } 
+    .search256 input[type="search"]{
+        width: 90.4%;
+    }
     .accordion .trigger{
         width: 90%;
         .content{
@@ -147,52 +200,89 @@
         }
     }
 }
-
-@media screen and (max-width: 425px){     
+@media screen and (max-width: 425px){
+    .logo{
+        margin-left: 36px;
+    }
+    .basket{
+        right: 23px;
+    }
+    .search_hidden {
+            position: absolute;
+            top: 25px;
+            right: 55px;
+        label{
+            display: block;
+            color: white;
+            cursor: pointer;
+            }
+    }
+    .search_hid {
+        display: none;
+    }
+    .search256 {
+        position: absolute;
+        top: 25px;
+        left: 5px;        
+        .checkbox_search256{
+            display: none;
+        }
+    }   
     .card{
-        width: 100%;
-        height: 360px;
+        width: 85.5%;
+        height: 315px;
+        margin: 0;
+        padding: 22px;
+        .foto{
+            margin-top: -10px;
+            img{
+                margin-left: 40px;
+            }
+        }
+        p{
+            padding-right: 25px;
+            font-size: 1.05em;
+        }
+        .value{
+            margin-top: 35px;
+            i{
+                right: -3px;
+            }
+        }
+    }
+    .card:nth-child(n+2):nth-child(even){
+       margin-left: 0; 
     }
     .spec {
-        width: 100%;
-        height: auto;
+        width: 85.5%;
+        height: 630px;
         .foto_spec{
-        width: 100%;
-        height: auto;
-        float: none;
-        img{
             width: 100%;
+            height: auto;
+            float: none;
+            img{
+                width: 90%;
+                margin-top:27px;
+                margin-left: 25px;
+            }
         }
+        .headline_spec{
+            margin-top: 27px;
+        }
+        .text{
+            padding-right: 0;
+        }
+        .old_price{
+            padding-top: 15px;
         }
             .value_spec{
             width: 100%;
+                i{
+                    right: -1px;
+                }
         }
     }
     .accordion{
         width: 80%;
     }   
 }
-
-@media screen and (max-width: 320px){
-    .accordion{
-        width: 80%;
-        margin-left: 1%;
-        .trigger{
-            width: 95%;         
-        }
-        .price input[type="text"]{
-            width: 100px;
-        }                
-    }     
-    .spec{
-        height: auto;
-            .foto_spec{
-            width: 100%;
-            height: auto;
-            float: none;
-                img{
-                    margin: 0 auto;
-                }
-            }
-    }
-    }
